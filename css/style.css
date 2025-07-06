@@ -1,0 +1,224 @@
+@font-face {
+  font-family: "Italianno";
+  src: url("../fonts/Italianno/Italianno.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu/Ubuntu.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #F5E9D9;
+}
+#main-header {
+  min-height: 150px;
+  background-color: #593825;
+  color: #fff;
+  padding: 20px 0px;
+  box-sizing: border-box;
+  font-family: "Italianno", 'Times New Roman', Times, serif;
+  font-size: 24px;
+  border-bottom: 3px solid #D97904;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+#branding {
+  float: left;
+}
+#logo {
+  width: 100px;
+}
+#site-title {
+  display: inline-block;
+}
+#main-nav {
+  float: right;
+}
+#main-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  list-style-type: none;
+  padding-left: 0;
+  padding-top: 45px;
+}
+#main-nav li {
+
+}
+#main-nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+}
+/*********************
+  welcome showcase
+**********************/
+.showcase-dimensions {
+  width: 100%;
+  margin: 0px auto;
+  min-height: 400px;
+  text-align: center;
+}
+.showcase-dimensions h1 {
+  padding-top: 100px;
+  margin-top: 0;
+}
+.welcome-showcase {
+  background-image: url("../images/turin.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.alpha-dimensions {
+  min-height: 400px;
+}
+.welcome-alpha {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+/*********************
+  welcome col
+**********************/
+.col-dimensions {
+  height: 400px;
+}
+.container-col {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+.container-col .box {
+  width: 33.33%;
+  height: 350px;
+  text-align: center;
+  margin: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 10px;
+}
+.container-col .box img {
+  width: 50%;
+}
+.welcome-col .box {
+  background-color: #D97904;
+}
+/************************
+    Our Showcase
+*************************/
+.our-showcase {
+  background-image: url("../images/outside-cafe.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.our-alpha {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+/************************
+    Our Cols
+*************************/
+.our-col .box {
+  background-color: #8C6B4D;
+}
+/************************
+    Piedmont showcase
+*************************/
+.piedmont-showcase {
+  background-image: url("../images/coffee-in-shop.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.alpha-piedmont {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/************************
+    Piedmont Cols
+*************************/
+.piedmont-col .box{
+  background-color: #593825;
+  color: #fff;
+}
+/************************
+    gather showcase
+*************************/
+.gather-showcase{
+  background-image: url("../images/couple-dining.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.alpha-gather{
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/************************
+    gather cols
+*************************/
+.gather-col .box {
+  background-color: #4B7A3D;
+  color: #fff;
+}
+
+#main-footer {
+  background: #593825;
+  text-align: center;
+  color: #fff;
+  padding: 40px 0;
+  border-top: 3px solid #D97904;
+}
+/************************
+    MEDIA Query Showcase and columns
+*************************/
+@media (max-width: 768px) {
+  #branding, #main-nav {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+  }
+  #site-title {
+    margin: 0;
+  }
+  #main-nav ul {
+    padding-top: 0;
+    justify-content: center;
+    margin: 0;
+  }
+  .col-dimensions {
+    height: auto;
+  }
+  .container-col {
+    flex-direction: column;
+  }
+  .container-col .box {
+    width: 60%;
+    height: auto;
+  }
+  .container-col .box img {
+    width: 125px;
+  }
+}
+@media(max-width: 425px) {
+  .container-col .box {
+    width: 90%;
+    height: auto;
+  }
+}

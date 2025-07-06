@@ -1,0 +1,63 @@
+#main-content h1 {
+  text-align: center;
+  padding: 40px 0;
+}
+.menu-dimensions {
+  width: 100%;
+  margin: 0 auto;
+}
+.coffee-menu {
+  background-color: #8C6B4D;
+}
+.menu-dimensions {
+  padding: 40px 0;
+}
+.menu-dimensions h2 {
+  text-align: center;
+  padding: 20px;
+}
+.menu-gallery {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding-left: 0;
+}
+.menu-gallery li {
+  width: 25%;
+  margin: 20px;
+}
+.menu-gallery img {
+  width: 100%;
+}
+.menu-gallery p {
+  background-color: #fff;
+  padding: 5px 0px;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  bottom: 6px;
+}
+.food-menu {
+  background-color: #4B7A3D;
+}
+@media(max-width:768px) {
+  .menu-gallery li {
+    width: 40%;
+    margin: 10px 20px;
+  }
+}
+@media(max-width:445px) {
+  .menu-gallery li {
+    width: 90%;
+    margin: 10px 0px;
+  }
+}
+
+/***********************
+      CONTACT US
+************************/
